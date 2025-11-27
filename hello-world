@@ -1,0 +1,16 @@
+# workflow name
+name : First workflow
+
+# Event
+on :
+  push :
+  workflow_dispatch:
+
+jobs:
+
+  hello-Job:
+#runner
+  runs-on: ubuntu-latest
+steps:
+-name : hello world
+run : echo "hello world"
